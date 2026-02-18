@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "pnpm run design-framework:update",
+    "design-framework:update": "git submodule update --remote --merge packages/design-framework"
   },
   "dependencies": {
     "next": "16.1.6",
